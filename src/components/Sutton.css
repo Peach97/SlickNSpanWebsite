@@ -1,0 +1,66 @@
+:root {
+
+    --primary: #fff;
+}
+
+.stn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-top: 60vh;
+}
+
+.stn--primary {
+    background-color: black;
+    color: white;
+    border: 1px solid #242424;
+    border-radius: 18px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.stn--primary:hover {
+    background: black;
+    color: rgb(255, 255, 0);
+    transition: all 0.3s ease-out;
+    transition: 250ms;
+    font-size: 22px;
+
+
+
+
+}
+
+
+
+.stn--outline {
+    background-color: white;
+    color: #242424;
+    padding: 8px 10px;
+    border: 1px solid #242424;
+    transition: all 0.3s ease-out;
+}
+
+.stn-medium {
+    padding: 8px 20px;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.stn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+
+}
+
+.stn--medium:hover,
+.stn--large:hover {
+    background: black;
+    color: white;
+    transition: all 0.3s ease-out;
+    transition: 250ms;
+}

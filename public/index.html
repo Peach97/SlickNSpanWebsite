@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- navbar icon link -->
+    <!-- <link
+    href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" /> -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -9,35 +13,287 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <!-- </style> -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- #Font Awesome CDN below -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>SlickNSpan</title>
+
+    <!-- <style>
+
+   
+
+
+
+
+
+
+
+
+
+
+  </style> -->
+
+    <!-- <style>
+    img {
+      position: absolute;
+      top: 10%;
+      /* left: 10%; */
+      /* width: fit-content;
+        height: fit-content; */
+    }
+
+    .imgbox {
+      display: grid;
+      height: 100%;
+      position: relative;
+      text-align: center;
+      margin-bottom: 1px;
+
+    }
+
+    .center-fit {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      overflow: hidden;
+      min-height: 100%;
+      min-width: 1024px;
+      width: 100%;
+      top: 0;
+      height: auto;
+      transition: all .3s cubic-bezier(0, 0, .5, 1);
+
+    }
+
+    .centered {
+      position: relative;
+      margin-top: 25%;
+      margin-left: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    .btn--primary:hover {
+      background: #110809;
+      color: #fff;
+      transition: all 0.3s ease-out;
+      transition: 250ms;
+    }
+
+    .btn--primary {
+      border-radius: 500px;
+      margin-bottom: 33.3%;
+      overflow: hidden;
+      position: relative;
+
+    }
+
+    .center-top-text {
+      position: absolute;
+      margin-top: 15%;
+      left: 50%;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 4rem;
+      transform: translate(-50%, -50%);
+      text-shadow: 3px 3px black;
+      min-width: 100%;
+
+      /* display: flex;
+      flex-direction: column;
+      position:relative;
+      overflow: hidden;
+      border-radius: 18px;
+      width: 480px;
+      height: 500px;
+      transition:all .3s cubic-bezier(0,0,.5,1); */
+    }
+
+    .form-style-2 {
+      max-width: 500px;
+      padding: 20px 12px 10px 20px;
+      font: 13px Arial, Helvetica, sans-serif;
+      position: relative center;
+      margin-top: 100%;
+      margin-left: 33.3%;
+
+
+    }
+
+    .form-style-2-heading {
+      font-weight: bold;
+      font-style: italic;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+      font-size: 15px;
+      padding-bottom: 3px;
+    }
+
+    .form-style-2 label {
+      display: block;
+      margin: 0px 0px 15px 0px;
+    }
+
+    .form-style-2 label>span {
+      width: 100px;
+      font-weight: bold;
+      float: left;
+      padding-top: 8px;
+      padding-right: 5px;
+    }
+
+    .form-style-2 span.required {
+      color: red;
+    }
+
+    .form-style-2 .tel-number-field {
+      width: 40px;
+      text-align: center;
+    }
+
+    .form-style-2 input.input-field,
+    .form-style-2 .select-field {
+      width: 48%;
+    }
+
+    .form-style-2 input.input-field,
+    .form-style-2 .tel-number-field,
+    .form-style-2 .textarea-field,
+    .form-style-2 .select-field {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      border: 1px solid #C2C2C2;
+      box-shadow: 1px 1px 4px #EBEBEB;
+      -moz-box-shadow: 1px 1px 4px #EBEBEB;
+      -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      padding: 7px;
+      outline: none;
+    }
+
+    .form-style-2 .input-field:focus,
+    .form-style-2 .tel-number-field:focus,
+    .form-style-2 .textarea-field:focus,
+    .form-style-2 .select-field:focus {
+      border: 1px solid #0C0;
+    }
+
+    .form-style-2 .textarea-field {
+      height: 100px;
+      width: 55%;
+    }
+
+    .form-style-2 input[type=submit],
+    .form-style-2 input[type=button] {
+      border: none;
+      padding: 8px 15px 8px 15px;
+      background: #242422;
+      color: #fff;
+      box-shadow: 1px 1px 4px #DADADA;
+      -moz-box-shadow: 1px 1px 4px #DADADA;
+      -webkit-box-shadow: 1px 1px 4px #DADADA;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+    }
+
+    .form-style-2 input[type=submit]:hover,
+    .form-style-2 input[type=button]:hover {
+      background: #EA7B00;
+      color: #fff;
+    }
+
+    .pg2start {
+      position: relative;
+      margin-top: 35%;
+
+
+    }
+  </style> -->
   </head>
+  <!-- images/package.jpeg -->
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div id="root">
+      <!-- <div class="button" src="../Button"></div>
+  
+  <!-Home image section -->
+      <!-- <div class="imgbox">
+    <img class="center-fit" src="plain-black-background.jpg" alt="This image cannot be displayed">
+    <div class="center-top-text">This is the example
+    </div>
+  <div class="centered">
+      <button class="btn btn--outline btn--primary">Schedule Now!</button>
+    </div>
+  </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+  <body> -->
+
+      <!-- <div class='pg2start'>SlickNSpan Page 2 Begins here<hr>
+    </div> -->
+
+      <!-- </div>
+    <div>
+
+
+
+
+
+
+
+      <</a> -->
+    </div>
+
+    <!-- <div class="form-style-2">
+      <div class="form-style-2-heading">How can we help?</div>
+      <form action="" method="post">
+        <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field"
+            name="field1" value="" /></label>
+        <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field"
+            name="field2" value="" /></label>
+        <label><span>Phone</span><input type="text" class="tel-number-field" name="tel_no_1" value=""
+            maxlength="4" />-<input type="text" class="tel-number-field" name="tel_no_2" value=""
+            maxlength="4" />-<input type="text" class="tel-number-field" name="tel_no_3" value=""
+            maxlength="10" /></label>
+        <label for="field4"><span>Category</span><select name="field4" class="select-field">
+            <option value="General Question">General</option>
+            <option value="Advertise">Issue</option>
+            <option value="Partnership">Partnership</option>
+          </select></label>
+        <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5"
+            class="textarea-field"></textarea></label>
+
+        <label><span> </span><input type="submit" value="Submit" /></label>
+      </form>
+    </div>
+  </body>
+ -->
   </body>
 </html>
