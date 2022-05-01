@@ -7,9 +7,9 @@ import About from "./pages/about";
 // import Contact from "./pages/contact";
 // import Gallery from "./pages/gallery";
 // import Services from "./pages/services";
-import Form from "./components/Form";
-import Cards from "./components/Cards";
-import List from "./components/List";
+import Form from "/Users/janelleghanem/react-website/src/pages/Form/Form.js";
+import Cards from "/Users/janelleghanem/react-website/src/pages/Cards/Cards.js";
+import List from "/Users/janelleghanem/react-website/src/pages/List/List.js";
 
 function App() {
   return (
@@ -19,8 +19,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Form} />
-          <Route path="/gallery" component={Cards} />
+          <Route path="#contact" component={Form.js} />
+          <Route path="#gallery" component={Cards} />
           <Route path="/services" component={List} />
         </Routes>
       </Router>

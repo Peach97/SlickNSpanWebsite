@@ -1,26 +1,39 @@
 .listbar {
-    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
-    height: 10%;
+    background: #090909;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    font-size: 1rem;
+    position: relative;
+    top: 0rem;
+    z-index: 998;
+    height: 225vh;
+
+
+    /* height: 10%; */
+
 }
+
+/* .listbar,
+p {
+    padding-top: 15%;
+
+
+
+
+} */
 
 .listbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 50vh;
     width: 100%;
-
+    background-color: #090909;
+    position: relative;
 }
 
 .listbar-logo {
-    color: rgb(64, 64, 64);
+    color: #090909;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -50,8 +63,8 @@
     width: 60vw;
     justify-content: center;
     margin-right: 2rem;
-    border-bottom: 1px solid rgb(64, 64, 64);
-    border-width: 1;
+    border-width: 1px;
+    padding-bottom: 0rem;
 
 
 }
@@ -61,25 +74,38 @@
 }
 
 .list-links {
-    color: rgb(64, 64, 64);
-    display: flex;
+    color: rgb(255, 255, 255);
+    display: flexbox;
     align-items: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 2rem 1rem;
     height: 100%;
+    content: inherit;
+
+
+
+
 
 }
 
 .list-links:hover {
-    color: red;
-    transition: all 0.2s ease-out;
+    color: white;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #DC143C,
+        0 0 82px #DC143C,
+        0 0 92px #DC143C,
+        0 0 102px #DC143C,
+        0 0 151px #DC143C;
 
 
 
 }
 
 .fa-bars {
-    color: rgb(255, 255, 255);
+    color: #090909;
 }
 
 .list-links-mobile {
@@ -108,7 +134,7 @@
     }
 
     .list-menu.active {
-        background: #242222;
+        background: #ffffff;
         position: fixed;
         left: 0;
         right: 0;
@@ -120,14 +146,14 @@
 
     .list-links {
         text-align: center;
-        padding: 2rem;
+        padding: 0.5rem 5rem;
         width: 100%;
         display: table;
     }
 
     .list-links:hover {
         background-color: #fff;
-        color: #242424;
+        color: #090909;
         border-radius: 0;
 
     }
@@ -150,7 +176,7 @@
     }
 
     .fa-times {
-        color: black;
+        color: #090909;
         font-size: 2rem;
     }
 
@@ -163,7 +189,7 @@
         text-decoration: none;
         font-size: 1.5rem;
         background-color: transparent;
-        color: black;
+        color: #090909;
         padding: 14px 20px;
         border: 1px solid #fff;
         transition: all 0.3s ease-out;
@@ -173,12 +199,12 @@
 
     .list-links-mobile:hover {
         background: #fff;
-        color: #242424;
+        color: #090909;
         transition: 250ms;
     }
 
-    .sub1 {
-        color: #fff;
+    /* .sub1 {
+        color: rgb(95, 89, 89);
         justify-self: start;
         margin-left: 20px;
         cursor: pointer;
@@ -186,14 +212,14 @@
         font-size: 2rem;
         display: flex;
         align-items: center;
-    }
+    } */
 
-    #logo-header-combo {
+    /* #logo-header-combo {
         width: 465px;
 
 
 
-    }
+    } */
 
 
 

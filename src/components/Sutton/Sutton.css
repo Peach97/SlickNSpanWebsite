@@ -9,25 +9,36 @@
     outline: none;
     border: none;
     cursor: pointer;
-    margin-left: 5%;
-    margin-top: 60vh;
+    right: 85vw;
+    height: 3em;
+    top: 100vh;
+    margin-bottom: 25vh;
+    position: relative;
+    font-size: .5rem;
+    border: 2px whitesmoke;
+
 }
 
 .stn--primary {
-    background-color: black;
+    background-color: #1E90FF;
     color: white;
-    border: 1px solid #242424;
-    border-radius: 18px;
-    font-size: 20px;
+    border-radius: 20px;
+    font-size: 14px;
     font-style: italic;
+    margin-bottom: 50vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 2px whitesmoke;
 }
 
 .stn--primary:hover {
-    background: black;
+    background: #1E90FF;
     color: rgb(255, 255, 0);
     transition: all 0.3s ease-out;
     transition: 250ms;
-    font-size: 22px;
+    font-size: 15px;
 
 
 
@@ -38,9 +49,9 @@
 
 .stn--outline {
     background-color: white;
-    color: #242424;
+    color: #fff;
     padding: 8px 10px;
-    border: 1px solid #242424;
+    border: 1px solid #fff;
     transition: all 0.3s ease-out;
 }
 
@@ -59,7 +70,7 @@
 
 .stn--medium:hover,
 .stn--large:hover {
-    background: black;
+    background: #1E90FF;
     color: white;
     transition: all 0.3s ease-out;
     transition: 250ms;

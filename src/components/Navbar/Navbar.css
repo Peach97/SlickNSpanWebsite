@@ -1,21 +1,22 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(26, 23, 23) 100%);
+  background-color: #090909;
   height: 10%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
+  justify-content: right;
+  align-items: right;
+  font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 998;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  height: 80px;
+  height: 5.5rem;
   width: 100%;
+  color: #31393C;
 
 }
 
@@ -30,6 +31,7 @@
   align-items: center;
   word-wrap: normal;
   width: 75%;
+  margin-right: 50vw;
 
 
 
@@ -38,7 +40,6 @@
 .fa-typo3 {
   margin-left: 0.5rem;
   font-size: 1.8rem;
-  color: transparent;
 }
 
 .nav-menu {
@@ -49,7 +50,7 @@
   text-align: center;
   width: 60vw;
   justify-content: center;
-  margin-right: 2rem;
+  margin-right: 4rem;
 
 }
 
@@ -60,15 +61,27 @@
 .nav-links {
   color: rgb(255, 255, 255);
   display: flex;
-  align-items: center;
+  align-items: left;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem 2rem;
   height: 100%;
+  justify-content: left;
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid rgb(255, 255, 255);
+  color: white;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #DC143C,
+    0 0 82px #DC143C,
+    0 0 92px #DC143C,
+    0 0 102px #DC143C,
+    0 0 151px #DC143C;
   transition: all 0.2s ease-out;
+
+
 
 }
 
@@ -102,7 +115,7 @@
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: #31393C;
     position: fixed;
     left: 0;
     right: 0;
@@ -110,6 +123,7 @@
     transition: all 0.5s ease;
     z-index: 1;
     top: .5;
+    border-bottom: 20px;
   }
 
   .nav-links {
@@ -122,7 +136,7 @@
   .nav-links:hover {
     background-color: #fff;
     color: #242424;
-    border-radius: 0;
+    border-radius: 10px;
   }
 
   .navbar-logo {
@@ -170,7 +184,7 @@
     transition: 250ms;
   }
 
-  .sub1 {
+  /* .sub1 {
     color: #fff;
     justify-self: start;
     margin-left: 20px;
@@ -179,14 +193,14 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
-  }
+  } */
 
-  #logo-header-combo {
+  /* #logo-header-combo {
     width: 465px;
 
 
 
-  }
+  } */
 
 
 
@@ -194,4 +208,22 @@
 
 
 
+}
+
+.social-icons {
+  justify-content: left;
+  display: flex;
+  align-items: left;
+  position: absolute;
+  margin-left: -15rem;
+  padding: .001rem .001rem;
+  padding-bottom: 1.25rem;
+}
+
+.social-logo {
+  justify-content: left;
+  display: flex;
+  align-items: left;
+  position: relative;
+  left: 33.3rem;
 }

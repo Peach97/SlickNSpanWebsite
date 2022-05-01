@@ -1,17 +1,33 @@
+#gallery {
+  padding-top: 0rem;
+
+
+
+
+}
+
 .cards {
   padding: 4rem;
-  background: local;
+  background: fixed;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: black;
+  background-color: #090909;
+  z-index: 997;
+  position: relative;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  height: 220vh;
 
 }
 
 h1 {
   text-align: center;
   color: whitesmoke;
+  margin-top: 40vh;
+  font-size: 6rem;
+
 }
 
 .cards__container {
@@ -21,11 +37,14 @@ h1 {
   max-width: 1120px;
   width: 90%;
   margin: 0 auto;
+  margin-top: 40vh;
+
 }
 
 .cards__wrapper {
   position: relative;
   margin: 50px 0 45px;
+
 }
 
 .cards__items {
@@ -37,6 +56,7 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+
 }
 
 .cards__item__link {
@@ -45,7 +65,7 @@ h1 {
   width: 100%;
   box-shadow: 0 6px 20px rgb(255, 255, 255);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px #090909);
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
@@ -56,6 +76,7 @@ h1 {
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
+
 }
 
 .fade-img {
@@ -73,7 +94,7 @@ h1 {
   font-size: 12px;
   font-weight: 700;
   color: #fff;
-  background-color: #1f98f4;
+  background-color: #090909;
   box-sizing: border-box;
 }
 
@@ -90,6 +111,7 @@ h1 {
   max-height: 100%;
   object-fit: cover;
   transition: all 0.2s linear;
+
 }
 
 .cards__item__img:hover {

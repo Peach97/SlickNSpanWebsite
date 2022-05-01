@@ -1,6 +1,7 @@
-.one {
+/* .one {
     list-style-type: armenian;
 }
+
 
 ul {
     line-height: 1.5em;
@@ -19,7 +20,7 @@ ul {
     align-items: center;
     object-fit: scale-down;
     /* height: 100vh; */
-    height: 100vh;
+/* height: 100vh;
 
 
 
@@ -39,3 +40,24 @@ p {
 
 
 }
+
+*/
+#list {
+    background-color: #090909;
+    z-index: 999;
+    height: 75vh;
+
+
+
+
+}
+
+/* .list-container {
+    z-index: 999;
+    background-color: #090909;
+
+
+
+
+
+} */

@@ -1,10 +1,11 @@
 import React from "react";
 import "./../App.css";
-import Cards from "../components/Cards";
-import HeroSection from "/Users/janelleghanem/react-website/src/components/HeroSection.js";
-import Form from "../components/Form";
-import Listbar from "../components/Listbar";
-import List from "../components/List";
+import Cards from "/Users/janelleghanem/react-website/src/pages/Cards/Cards.js";
+import HeroSection from "/Users/janelleghanem/react-website/src/pages/HeroSection/HeroSection.js";
+// import Form from "/Users/janelleghanem/react-website/src/pages/Form/Form.js";
+import Listbar from "/Users/janelleghanem/react-website/src/components/ListBar/Listbar.js";
+// import List from "/Users/janelleghanem/react-website/src/pages/List/List.js";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -12,8 +13,7 @@ function Home() {
       <HeroSection />
       <Cards />
       <Listbar />
-      <List />
-      <Form />
+      <Footer />
     </>
   );
 }
