@@ -1,129 +1,82 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap";
+import image6 from "../../images/Group 2.png";
 
-function Navbar() {
-  const [click, setClick] = useState(false);
-  const [setButton] = useState(true);
+function smoothScroll() {
+  document.querySelector("#about").scrollIntoView({
+    behavior: "smooth",
+    offsetTop: "120px",
+  });
+}
+function smoothHome() {
+  document.querySelector("#hero-container").scrollIntoView({
+    behavior: "smooth",
+  });
+}
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  window.addEventListener("resize", showButton);
-
+function SlickNavbar() {
   return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <div id="logo-header-combo">
-            <Link to="/" className="navbar-logo">
-              <section class="social-media">
-                <div class="social-media-wrap">
-                  <div class="footer-logo">
-                    <Link to="/" className="social-logo">
-                      {/* SlickNSpan */}
-                      <i class="fab fa-typo3" />
-                    </Link>
-                  </div>
+    <Container fluid>
+      <Navbar
+        variant="dark"
+        expand="lg"
+        id="nav-bar"
+        className="custom"
+        style={{ fontSize: "16px" }}
+        fixed="top"
+      >
+        <Navbar.Brand href="#home" style={{ paddingLeft: "2.5rem" }}>
+          <img src={image6} alt="Cannot be viewed at this time" />
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          style={{ margin: "0 1rem 0 auto" }}
+        />
 
-                  <div class="social-icons">
-                    <Link
-                      class="social-icon-link facebook"
-                      to="/"
-                      target="_blank"
-                      aria-label="Facebook"
-                    >
-                      <i class="fab fa-facebook-f" />
-                    </Link>
-                    <Link
-                      class="social-icon-link instagram"
-                      to="/"
-                      target="_blank"
-                      aria-label="Instagram"
-                    >
-                      <i class="fab fa-instagram" />
-                    </Link>
-                    <Link
-                      class="social-icon-link youtube"
-                      to="/"
-                      target="_blank"
-                      aria-label="Youtube"
-                    >
-                      <i class="fab fa-youtube" />
-                    </Link>
-                    <Link
-                      class="social-icon-link twitter"
-                      to="/"
-                      target="_blank"
-                      aria-label="Twitter"
-                    >
-                      <i class="fab fa-twitter" />
-                    </Link>
-                    <Link
-                      class="social-icon-link twitter"
-                      to="/"
-                      target="_blank"
-                      aria-label="LinkedIn"
-                    >
-                      <i class="fab fa-linkedin" />
-                    </Link>
-                  </div>
-                </div>
-              </section>
-            </Link>
-          </div>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            {/* About */}
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                About
-              </Link>
-            </li>
-            {/* Services */}
-            <li className="nav-item">
-              <Link
-                activeclass="active"
-                to="#list"
-                className="nav-links"
-                onClick={closeMobileMenu}
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto" activeKey="1">
+            <Nav.Link className="nav-home" style={{ paddingRight: "2.5rem" }}>
+              carloscolon@spicknspan.com | (813) 403 - 8713
+            </Nav.Link>
+            <Nav.Link
+              eventKey="1"
+              className="nav-home"
+              onClick={() => smoothHome()}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link className="nav-home" onClick={() => smoothHome()}>
+              Review
+            </Nav.Link>
+            <Nav.Link className="nav-home" onClick={() => smoothScroll()}>
+              Contact
+            </Nav.Link>
+            <NavDropdown
+              className="nav-home"
+              title="Socials"
+              id="basic-nav-dropdown"
+            >
+              <NavDropdown.Item
+                href="https://www.facebook.com/Spicknspan-Detailing-105449615261940"
+                target="_blank"
               >
-                Services
-              </Link>
-            </li>
-            {/* Contact Us */}
-            <li className="nav-item">
-              <a href="#form" className="nav-links" onClick={closeMobileMenu}>
-                Contact
-              </a>
-            </li>
-            {/* Gallery */}
-            <li className="nav-item">
-              <a
-                href="#gallery"
-                className="nav-links"
-                onClick={closeMobileMenu}
+                Facebook <i class="fab fa-facebook-f" />
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://www.instagram.com/spicknspandetailing/"
+                target="_blank"
               >
-                Gallery
-              </a>
-            </li>
-          </ul>
-          {/* double & returns whatever is after it */}
-          {/* {button && <Button buttonStyle='btn--outline'>Schedule Now!</Button>} */}
-        </div>
-      </nav>
-    </>
+                Instagram <i class="fab fa-instagram" />
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4" target="_blank">
+                YouTube <i class="fab fa-youtube" />
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </Container>
   );
 }
 
-export default Navbar;
+export default SlickNavbar;

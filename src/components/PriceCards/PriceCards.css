@@ -1,0 +1,115 @@
+.pricing-col {
+    justify-content: center;
+    display: flex;
+}
+
+.price-card-wrapper {
+    height: 40rem;
+    background-image: linear-gradient(#080708, 92%, #43bccd) !important;
+    border-radius: 18px !important;
+    margin-top: 10rem;
+    width: 25rem;
+    box-shadow: 0 6px 20px rgba(233, 238, 247, 0.427);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(254, 254, 254, 0.733));
+    filter: drop-shadow(0 6px 20px rgba(107, 148, 225, 0.819));
+
+    border-radius: 10px;
+
+}
+
+
+
+
+.price-card-body {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.price-header {
+    justify-content: center;
+    display: flex;
+    font-size: 72px;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: none !important;
+    color: #fff;
+    text-shadow: #080708 2px 2px 4px;
+
+}
+
+.price-title {
+    justify-content: center;
+    display: flex;
+    font-size: 45px;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: none !important;
+    color: #fff;
+    text-shadow: #080708 2px 2px 4px;
+
+
+
+}
+
+/* .pricecard-text {
+    margin-top: 2rem;
+    line-height: 3rem;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    list-style: circle;
+    color: #fff;
+
+
+} */
+
+.price-footer {
+    justify-content: center;
+    display: flex;
+    font-size: 72px;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: none !important;
+    color: #fff;
+    text-shadow: #080708 2px 2px 4px;
+
+}
+
+
+
+@media (max-width: 425px) {
+    .price-card-body {
+        height: 20rem
+    }
+
+    .price-header {
+        font-size: 1.5em;
+    }
+
+    .price-title {
+        font-size: 1em;
+    }
+
+    .pricecard-text {
+        font-size: 1em;
+    }
+
+    .price-footer {
+        font-size: 2.5em;
+    }
+
+    .price-card-wrapper {
+        height: 30rem;
+        width: 15rem;
+    }
+
+
+}
