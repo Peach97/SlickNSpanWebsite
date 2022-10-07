@@ -59,8 +59,8 @@ function Product() {
               </Col>
               {/* Image Column */}
               <Col md={5} className="product-img-container">
-                <img src={image} style={{ width: "100%", height: "50%" }} />{" "}
-                <img src={image2} style={{ width: "100%", height: "50%" }} />
+                <img src={image} alt="productImage" style={{ width: "100%", height: "50%" }} />{" "}
+                <img src={image2} alt="productImage2" style={{ width: "100%", height: "50%" }} />
               </Col>
             </Row>
           </Container>
