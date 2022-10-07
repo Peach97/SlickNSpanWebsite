@@ -3,7 +3,6 @@ import "./Slider.css";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
-  ReactCompareSliderHandle,
 } from "react-compare-slider";
 
 export const Slider = ({ portrait, ...props }) => (
