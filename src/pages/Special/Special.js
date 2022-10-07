@@ -1,8 +1,6 @@
 import React from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import "./Special.css";
-import Lorem from "react-lorem-component";
-import image from "../../images/car-white.png";
 
 function Special() {
   return (
