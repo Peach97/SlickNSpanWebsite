@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Tab, Nav, Col, Container } from "react-bootstrap";
+import { Row, Tab, Nav, Col } from "react-bootstrap";
 import PriceCards from "../../components/PriceCards/PriceCards";
 import { Fade } from "react-reveal";
 import "./Pricing.css";
